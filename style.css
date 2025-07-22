@@ -4,3 +4,42 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
+/* common design */
+.btn {
+  color: #fff;
+  background-color: #dd0000;
+  border: none;
+  border-radius: 10px;
+  padding: 25px;
+  cursor: pointer;
+}
+.container {
+  max-width: 1240px;
+  margin: auto;
+}
+/* banner section styling */
+.banner {
+  background-color: #333;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  margin: 50px auto;
+}
+.banner-content {
+  margin-left: 2rem;
+}
+.banner-content h2 {
+  font-size: 4.2rem;
+  font-weight: bold;
+  line-height: 1.2;
+}
+.banner-content p {
+  color: #fff;
+  margin-top: 25px;
+  margin-bottom: 30px;
+  max-width: 65%;
+}
+.banner-image img {
+  display: block;
+}
