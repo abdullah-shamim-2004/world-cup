@@ -10,7 +10,7 @@
   background-color: #dd0000;
   border: none;
   border-radius: 10px;
-  padding: 25px;
+  padding: 20px;
   cursor: pointer;
 }
 .container {
@@ -43,9 +43,12 @@
 .banner-image img {
   display: block;
 }
-/* upcoming Match */
+
+/* upcoming Match container style */
 .upcoming-match {
   display: flex;
+  justify-content: space-between;
+  gap: 2rem;
   flex: 1;
 }
 .upcoming-match-left {
@@ -56,9 +59,49 @@
   border-radius: 10px;
   height: fit-content;
   background-color: #161616;
+  width: 25%;
 }
 .upcoming-match-left .btn:nth-child(1),
 .upcoming-match-left .btn:nth-child(2) {
   background-color: #fff;
   color: #161616;
+}
+
+.upcoming-match-right {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.upcoming-match-right .card {
+  border: 1px solid #e8e8e8;
+  border-radius: 10px;
+}
+
+.card-details {
+  padding: 20px;
+}
+
+.upcoming-match-right .card img {
+  height: 180px;
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+  background-size: cover;
+}
+.upcoming-match-right .card .btn {
+  background-color: #fff;
+  color: #161616;
+  border: 1px solid #161616;
+  padding: 8px 15px;
+}
+.upcoming-match-right .card h2 {
+  margin: 15px 0;
+  font-size: 1.125rem;
+}
+.card-btn {
+  display: flex;
+  color: #707070;
+  gap: 40px;
+  margin-top: 10px;
 }
